@@ -1,0 +1,41 @@
+html, body {
+    min-height: 100%;
+  }
+
+body {
+    background-color: #E3DFFD;
+}
+
+h2 {
+    text-align: center;
+    color: purple;
+}
+
+form {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 5%;
+    width: 300px; height: 300px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table td {
+    font-size: 14pt;
+}
+
+.button1,.button2,.button3,.button4 {
+   width: 100px;
+   height: 70px;
+   border: 2px solid pink;
+   border-radius: 10%;
+   font-size: 16pt;
+   cursor: pointer;
+}

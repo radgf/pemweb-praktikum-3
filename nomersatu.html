@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Konversi Nilai Angka Menjadi Huruf</title>
+    </head>
+    <script languange="JavaScript">
+        function test()
+        {
+            // memasukkan nilai variabel angka yang akan dikonversi
+            var val1=document.kirim.T1.value
+            
+            // jika nilai variabel angka 0-40, maka menjadi huruf E
+            if(val1>=0&&40)
+            document.kirim.T2.value="E"
+
+            // jika nilai variabel angka 41-55, maka menjadi huruf D
+            if(val1>=41&&55)
+            document.kirim.T2.value="D"
+
+            // jika nilai variabel angka 56-60, maka menjadi huruf C
+            if(val1>=56&&60)
+            document.kirim.T2.value="C"
+
+            // jika nilai variabel angka 61-65, maka menjadi huruf BC
+            if(val1>=61&&65)
+            document.kirim.T2.value="BC"
+
+            // jika nilai variabel angka 66-70, maka menjadi huruf B
+            if(val1>=66&&70)
+            document.kirim.T2.value="B"
+
+            // jika nilai variabel angka 71-80, maka menjadi huruf AB
+            if(val1>=71&&80)
+            document.kirim.T2.value="AB"
+
+            // jika nilai variabel angka 81-100, maka menjadi huruf A
+            if(val1>=81&&100)
+            document.kirim.T2.value="A"
+        }
+    </script>
+    <body>
+        <form method="POST" name="kirim">
+            <p>
+                <!-- text field nilai angka -->
+                Angka <input type="text" name="T1" size= "20">
+                <!-- text field nilai huruf -->
+                = Huruf <input type="text" name="T2" size="20">
+            </p>
+            <p>
+                <!-- button konversi -->
+                <input type="button" value="Konversi" name="B1" onclick=test()>
+            </p>
+        </form>
+    </body>
+</html>
